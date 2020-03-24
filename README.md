@@ -1,7 +1,16 @@
-Donate to my Patreon https://www.patreon.com/bunnydoctor
-
 # KodeNames
 A popular word game.
+
+# Fork Changes
+
+- Original codenames wordset, thanks to [@eliotfowler](https://github.com/eliotfowler)
+- No analytics or tracking
+- Removed translations.
+- Faster loading, slimmer code
+- Added a "*cast*" feature, which hides the seed and other controls so you can stream the game easily.
+
+## Donate 
+Donate to the original author's Patreon at <https://www.patreon.com/bunnydoctor>.
 
 # Features
 * ADA Compliant

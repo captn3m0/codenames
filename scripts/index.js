@@ -196,6 +196,16 @@ function updateScore() {
 	}
 }
 
+function setupCast() {
+	$('#seed').hide();
+	$('#spymaster').hide();
+	$('#gameMode').hide();
+	$('#reset').hide();
+	$('#confirmText').hide();
+	$('#confirm').hide();
+	$('#cast').hide();
+}
+
 function spyMaster() {
 	//TODO: randomize or organize tiles for easier comparing
 	spyMasterMode = true;

@@ -2019,7 +2019,7 @@ var codenamesData = [
   "BEACH",
   "BELL",
   "LEPRECHAUN",
-  "PHEONIX",
+  "PHOENIX",
   "FORCE",
   "BOOM",
   "FORK",
