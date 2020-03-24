@@ -27,8 +27,15 @@ $("#gameMode").change(function() {
 	fire();
 });
 
+if (document.location.hash.length > 1) {
+	var seed = document.location.hash.substr(1);
+	console.log("Setting seed to " + seed)
+	$("#seed").val(document.location.hash.substr(1));
+}
+else {
+	$("#seed").val(Math.floor(Math.random() * 1000));	
+}
 
-$("#seed").val(Math.floor(Math.random() * 1000));
 fire();
 
 function fire() {
@@ -204,7 +211,18 @@ function setupCast() {
 	$('#confirmText').hide();
 	$('#confirm').hide();
 	$('#cast').hide();
-	alert("Please send the following seed to the spymasters: " + $('#seed').val());
+
+	document.location.hash = $('#seed').val();
+	var url = document.location.toString();
+	document.location.hash = "";
+
+	let instructions = "Please visit " + url + " and click the Spymaster button at the top-right";
+
+	navigator.clipboard.writeText(instructions).then(function() {
+	  alert("Instructions copied to the Clipboard. Paste on a chat only to the Spymasters");
+	}, function(err) {
+	  alert("Please send the following link to the spymasters: " + url + "and ask them to click the Spymaster button");
+	});	
 }
 
 function spyMaster() {

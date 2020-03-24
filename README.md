@@ -8,6 +8,15 @@ A popular word game.
 - Removed translations.
 - Faster loading, slimmer code
 - Added a "*cast*" feature, which hides the seed and other controls so you can stream the game easily.
+- Picks up the seed from URL.
+
+# How to play over the internet?
+
+1. Go to <https://captnemo.in/codenames/>
+2. Pick a seed and type it in the box. The game starts with a random seed otherwise.
+3. Click the cast button. Instructions will be copied to your clipboard.
+4. Send the instructions on a Private chat to the Spymasters. This gets them the URL with the seed and asks them to click the Spymaster button.
+5. Cast your browser tab and get on a call with all your players. I've tried this over Zoom, but other platforms should also work.
 
 ## Donate 
 Donate to the original author's Patreon at <https://www.patreon.com/bunnydoctor>.
