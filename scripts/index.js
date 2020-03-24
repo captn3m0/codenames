@@ -204,6 +204,7 @@ function setupCast() {
 	$('#confirmText').hide();
 	$('#confirm').hide();
 	$('#cast').hide();
+	alert("Please send the following seed to the spymasters: " + $('#seed').val());
 }
 
 function spyMaster() {
