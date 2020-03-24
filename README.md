@@ -13,10 +13,16 @@ A popular word game.
 # How to play over the internet?
 
 1. Go to <https://captnemo.in/codenames/>
-2. Pick a seed and type it in the box. The game starts with a random seed otherwise.
-3. Click the cast button. Instructions will be copied to your clipboard.
-4. Send the instructions on a Private chat to the Spymasters. This gets them the URL with the seed and asks them to click the Spymaster button.
-5. Cast your browser tab and get on a call with all your players. I've tried this over Zoom, but other platforms should also work.
+2. Click the cast button. Instructions will be copied to your clipboard. This will give you a random numeric seed. You can use a different one as well if you'd like.
+3. Send the instructions on a Private chat to the Spymasters. This gets them the URL with the seed and asks them to click the Spymaster button.
+4. Cast your browser tab and get on a call with all your players. I've tried this over Zoom, but other platforms should also work.
+
+For the next game:
+
+1. Pause your screen share.
+2. Refresh your page.
+3. Click cast again.
+4. Send instructions to the 2 new spymasters.
 
 ## Donate 
 Donate to the original author's Patreon at <https://www.patreon.com/bunnydoctor>.
