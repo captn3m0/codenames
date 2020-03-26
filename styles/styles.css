@@ -141,3 +141,8 @@ button, input, span#first {
 	font-size: 23px;
 	flex-grow: 1;
 }
+
+footer {
+	position: absolute;
+	bottom: 5px;
+}
