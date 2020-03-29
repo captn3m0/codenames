@@ -27,6 +27,17 @@ $("#gameMode").change(function() {
 	fire();
 });
 
+function findGetParameter(parameterName) {
+    var result = null,
+        tmp = [];
+    var items = document.location.search.substr(1).split("&");
+    for (var index = 0; index < items.length; index++) {
+        tmp = items[index].split("=");
+        if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+    }
+    return result;
+}
+
 if (document.location.hash.length > 1) {
 	var seed = document.location.hash.substr(1);
 	console.log("Setting seed to " + seed)
@@ -36,6 +47,21 @@ else {
 	$("#seed").val(Math.floor(Math.random() * 1000));	
 }
 
+var gameModeChildren = $("#gameMode").children();
+var GAME_MODES = [];
+for(var i=0;i<gameModeChildren.length;i++){
+    GAME_MODES.push(gameModeChildren[i].value)
+}
+var gamemode = parseInt(findGetParameter('gm'));
+
+if ( gamemode !== null ){
+	
+	if( Number.isNaN(gamemode) || gamemode >= gameModeChildren.length || gamemode < 0 ){
+		gamemode = 0;	
+	}
+	
+	$("#gameMode").val(GAME_MODES[gamemode]).change();
+}
 fire();
 
 function fire() {
@@ -212,9 +238,12 @@ function setupCast() {
 	$('#confirm').hide();
 	$('#cast').hide();
 
-	document.location.hash = $('#seed').val();
-	var url = document.location.toString();
-	document.location.hash = "";
+	var gamemode = GAME_MODES.indexOf($('#gameMode :selected').val());
+	var url = document.location.toString().split("#")[0].split("?")[0];
+	if( gamemode > 0 ) {
+		url += "?gm="+gamemode;
+	}
+	url += "#" + $('#seed').val();
 
 	let instructions = "Please visit " + url + " and click the Spymaster button at the top-right";
 
