@@ -80,6 +80,9 @@ function fire() {
 		case 'movies':
 			sessionData = movieData.slice(0);
 			break;
+        case 'hindimovies':
+            sessionData = hindiMoviesData.slice(0);
+            break;
 		case 'codenames':
 			sessionData = codenamesData.slice(0);
 			break;

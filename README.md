@@ -27,6 +27,7 @@ Donate to the original author's Patreon at <https://www.patreon.com/bunnydoctor>
   * Spanish Word Set
   * 1000 most common nouns
   * Top 250 Movies
+  * Popular Hindi Movies
   * Custom word set (create your own!)
 * Colorblind-friendly Colors
 * Muli-language compatible with google translate
