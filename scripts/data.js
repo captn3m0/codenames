@@ -2682,7 +2682,7 @@ var hindiMoviesData = [
   "Nawaabzaade",
   "Race",
   "Pardes",
-  "Much Kuch Kehna Hai,
+  "Much Kuch Kehna Hai",
   "Mission Kashmir",
   "Mission Mangal",
   "Jab Pyaar Kisise Hota Hai",
@@ -2730,7 +2730,7 @@ var hindiMoviesData = [
   "Lahore",
   "Kya Dilli Kya Lahore",
   "Raghu Romeo",
-  "Liars Dice"
+  "Liars Dice",
   "Mithiya",
   "Firaaq",
   "Ship Of Theseus",
@@ -2741,7 +2741,7 @@ var hindiMoviesData = [
   "Dev.D",
   "A Death In The Gunj",
   "Waiting",
-  "Cocktail"
+  "Cocktail",
   "Parmanu: The Story Of Pokhran",
   "Lucknow Central",
   "Khandaani Shafakhana",
@@ -2772,7 +2772,7 @@ var hindiMoviesData = [
   "Tees Maar Khan",
   "Baaghi",
   "Heropanti",
-  "A Flying Jatt"
+  "A Flying Jatt",
   "Vaah! Life Ho Toh Aisi",
   "Ishq Vishq",
   "My Name Is Anthony Gonsalves",
