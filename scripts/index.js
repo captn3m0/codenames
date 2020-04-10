@@ -38,6 +38,35 @@ function findGetParameter(parameterName) {
     return result;
 }
 
+/**
+ * Copies some text to clipboard
+ * @param {string} text
+ * 
+ * @returns {Promise}
+ */
+function copyToClipboard (text) {
+	if ('clipboard' in navigator) {
+		return navigator.clipboard.writeText(text);
+	}
+
+	// Fallback for Safari and IE
+	return new Promise(function (resolve, reject) {
+		var textarea = document.createElement('textarea');
+		textarea.value = text;
+		document.body.appendChild(textarea);
+		textarea.select();
+
+		try {
+			document.execCommand('copy');
+			resolve();
+		} catch (err) {
+			reject();
+		} finally {
+			document.body.removeChild(textarea);
+		}
+	});
+}
+
 if (document.location.hash.length > 1) {
 	var seed = document.location.hash.substr(1);
 	console.log("Setting seed to " + seed)
@@ -250,7 +279,7 @@ function setupCast() {
 
 	let instructions = "Please visit " + url + " and click the Spymaster button at the top-right";
 
-	navigator.clipboard.writeText(instructions).then(function() {
+	copyToClipboard(instructions).then(function() {
 	  alert("Instructions copied to the Clipboard. Paste on a chat only to the Spymasters");
 	}, function(err) {
 	  alert("Please send the following link to the spymasters: " + url + "and ask them to click the Spymaster button");
