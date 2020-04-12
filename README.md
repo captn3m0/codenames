@@ -8,8 +8,9 @@ A popular word game.
 - No analytics or tracking
 - Removed translations.
 - Faster loading, slimmer code
-- Added a "*cast*" feature, which hides the seed and other controls so you can stream the game easily.
+- Added a "*cast*" feature, which hides the seed and other controls so you can stream the game easily. This URL includes the selected wordset.
 - Picks up the seed from URL.
+- Adds a popular bollywood films wordset, thanks to @an-mittal
 
 # How to play over the internet?
 
