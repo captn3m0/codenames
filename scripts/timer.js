@@ -174,10 +174,11 @@ function showTimerForm() {
  * Hides the timer elements
  */
 function hideTimerForm() {
+  turnTimer.reset();
+
   document.querySelector('#playarea').classList.remove('has-timer');
   document.querySelector('#timer').classList.add('hidden');
-
-  turnTimer.reset();
+  document.querySelector('#timer-time').classList.add('hidden');
 }
 
 function attachTimerListeners () {
