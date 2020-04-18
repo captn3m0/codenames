@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 a:link {
   color: black;
 } /* unvisited link */
@@ -32,14 +36,7 @@ span#first {
 
 #board {
   box-sizing: border-box;
-  width: 97%;
-  position: absolute;
-  bottom: 5px;
-  left: 2%;
-  right: 1%;
-  height: calc(100% - 5% - 56px);
-  top: 56px;
-
+  width: 100%;
   font-size: 1.4em;
 }
 
@@ -150,7 +147,18 @@ span#first {
   flex-grow: 1;
 }
 
-footer {
-  position: absolute;
-  bottom: 5px;
+.hidden {
+  display: none;
+}
+
+#playarea {
+  margin: 20px 0;
+  display: flex;
+  flex: 1;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
