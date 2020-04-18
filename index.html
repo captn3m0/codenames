@@ -20,6 +20,8 @@
         <button id="reset" onclick="fire()">Reset</button>
         <span id="confirmText">confirm?</span>
         <input type="checkbox" id="confirm">
+        <label for="timerCheck">show timer?</label>
+        <input type="checkbox" id="timerCheck">
         <select id='gameMode'>
           <option value="codenames" selected="1">Codenames</option>
           <option value="default">Kodenames Word Set</option>
@@ -35,12 +37,37 @@
     </div>
     <div id="playarea">
       <div id="board"></div>
+      <div id="timer" class="hidden">
+        <h3>Timer</h3>
+        <form>
+          <div id="timer-input">
+            <input type="tel" placeholder="Time in seconds">
+          </div>
+          <div id="timer-controls">
+            <button id="timer-start">Start</button>
+            <button id="timer-pause" class="">Pause</button>
+            <button id="timer-resume" class="">Resume</button>
+            <button type="button" class="" id="timer-reset">Reset</button>
+          </div>
+          <div id="timer-time" class="hidden">
+            <div id="timer-minutes">
+              <div class="timer-digit"></div>
+              <div class="timer-text"></div>
+            </div>
+            <div id="timer-seconds">
+              <div class="timer-digit"></div>
+              <div class="timer-text"></div>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
     <footer><small><a target="_blank" href="https://github.com/captn3m0/codenames#how-to-play-over-the-internet">instructions / how to play over internet</a></small></footer>
   </div>
   <script   src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="  crossorigin="anonymous"></script>
   <script src="scripts/data.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js" integrity="sha256-0usXoFraKr8ZyLyx8PGuYrttpdWaadxkFM7QhwSojNE=" crossorigin="anonymous"></script>
-  <script src="scripts/index.js"></script>  
+  <script src="scripts/index.js"></script>
+  <script src="scripts/timer.js"></script>
 </body>
 </html>
